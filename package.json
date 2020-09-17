@@ -1,5 +1,5 @@
 {
-  "name": "example-app",
+  "name": "demo-app",
   "version": "0.1.0",
   "private": true,
   "homepage": "https://panacea777.github.io/react",
@@ -14,6 +14,8 @@
     "tailwindcss": "^1.8.10"
   },
   "scripts": {
+    "build:css": "postcss src/index.css -o src/tailwind.css",
+    "watch:css": "postcss src/index.css -o src/tailwind.css -w",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
